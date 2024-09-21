@@ -1,5 +1,7 @@
 const moment = require('moment');
 
+moment.locale('de');
+
 const sentenceCase = function (str) {
   if (typeof str !== 'string' || !str.length) {
     return str;

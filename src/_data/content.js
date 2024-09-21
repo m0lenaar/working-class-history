@@ -1,54 +1,57 @@
-const header = 'Welcome to this wonderful example timeline.';
-const footer = 'A footer goes here.';
+const header = 'Geschichte der Arbeiter:innenbewegung';
+const footer = 'Jetzt liegt es an dir diese Geschichte fortzuschreiben.';
 const entries = [
   {
-    id: 'cat',
-    categories: ['cat'],
-    color: 'green',
-    faicon: 'cat',
-    datetime: '2021-01-01 05:00',
-    title: 'Cats are very good',
-    image: {
-      link: 'http://placekitten.com',
-      src: 'http://placekitten.com/200/300',
-      alt: 'A placeholder kitten',
-      caption: 'Kitten!',
-    },
-    body: "The best thing in the universe is a cardboard box. Chirp at birds catasstrophe for meowwww for hiding behind the couch until lured out by a feathery toy for morning beauty routine of licking self sugar, my siamese, stalks me (in a good way), day and night lick the other cats. Pushed the mug off the table shove bum in owner's face like camera lens or tickle my belly at your own peril i will pester for food when you're in the kitchen even if it's salad and grass smells good, licks your face, but hiiiiiiiiii feed me now.",
+    id: '1848-kommunistisches-manifest',
+    categories: ['veröffentlichung'],
+    color: 'red',
+    faicon: 'book',
+    date: '1848-02-21',
+    title: 'Drucklegung des Kommunistischen Manifests',
+    body: "Das von Karl Marx und Friedrich Engels verfasste Manifest der Kommunistischen Partei wird in den Druck gegeben. Es erschien damit kurz vor der Februarrevolution in Frankreich sowie der Märzrevolution im Deutschen Bund und in dessen größten Staaten Österreich und Preußen.",
     links: [
       {
-        href: 'https://en.wikipedia.org/wiki/Cat',
-        linkText: 'Cat',
+        href: 'http://mlwerke.de/me/me04/me04_459.htm',
+        linkText: 'Volltext',
       },
     ],
   },
   {
-    id: 'dog',
-    categories: ['dog'],
-    color: 'green',
-    faicon: 'dog',
-    datetime: '2021-05-01 23:55',
-    title: 'Puppies are great too',
-    image: {
-      link: 'http://place-puppy.com',
-      src: 'https://place-puppy.com/300x300',
-      alt: 'A placeholder puppy',
-      caption: 'Puppy!',
-    },
-    body: 'Doggo ipsum sub woofer smol wow very biscit aqua doggo pupper dat tungg tho big ol pupper, very jealous pupper mlem heckin angery woofer very jealous pupper. Blep waggy wags long doggo, corgo. Tungg wow such tempt mlem very jealous pupper boofers lotsa pats, snoot smol big ol ruff doge super chub, long doggo heckin good boys and girls h*ck heck. Shoober blop many pats borkf, such treat. Big ol what a nice floof long water shoob wrinkler heck sub woofer, pupper porgo wow very biscit.',
+    id: '1864-iaa',
+    categories: ['kongress'],
+    color: 'red',
+    faicon: 'users',
+    date: '1864-09-28',
+    title: 'Gründung der Ersten Internationale',
+    body: 'Die Internationale Arbeiterassoziation (IAA), englisch International Workingmen’s Association (IWA), in der späteren Geschichtsschreibung auch Erste Internationale genannt, wird in London gegründet. Die IAA war der erste internationale Zusammenschluss von Arbeitergesellschaften, die nach den provisorischen Statuten „dasselbe Ziel verfolgen, nämlich: den Schutz, den Fortschritt und die vollständige Emanzipation der Arbeiterklasse“.',
     links: [
       {
-        href: 'https://en.wikipedia.org/wiki/Dog',
-        linkText: 'Dog',
+        href: 'https://de.wikipedia.org/wiki/Internationale_Arbeiterassoziation',
+        linkText: 'Wikipedia – Internationale Arbeiterassoziation (IAA)',
+      },
+    ],
+  },
+  {
+    id: '1917-oktoberrevolution',
+    categories: ['revolution'],
+    color: 'red',
+    faicon: 'fist-raised',
+    date: '1917-11-07',
+    title: 'Oktoberrevolution in Russland',
+    body: 'Die Oktoberrevolution vom 25. Oktober (jul.) / 7. November 1917 (greg.) war die gewaltsame Machtübernahme durch die kommunistischen Bolschewiki unter Führung Wladimir Iljitsch Lenins in Russland. Sie beseitigte die aus der Februarrevolution hervorgegangene Doppelherrschaft der sozialistisch-liberalen Provisorischen Regierung unter Alexander Kerenski und des Petrograder Sowjets. Dies führte zu einem mehrjährigen Bürgerkrieg und nach dessen Ende 1922 zur Gründung der Sowjetunion, einer Diktatur der Kommunistischen Partei Russlands.',
+    links: [
+      {
+        href: 'https://de.wikipedia.org/wiki/Oktoberrevolution',
+        linkText: 'Wikipedia – Oktoberrevolution',
       },
     ],
   },
 ];
 
 // Page details
-const pageTitle = 'Static timeline generator'; // The title of the page that shows in the browser tab
-const pageDescription = 'A super fancy timeline'; // The description of the page for search engines
-const pageAuthor = 'Jane Doe'; // Your name
+const pageTitle = 'Geschichte der Arbeiter:innenbewegung'; // The title of the page that shows in the browser tab
+const pageDescription = 'Eine Zeitleiste mit wesentlichen Momenten in der Geschichte der Arbeiter:innenbewegung, ohne Anspruch auf Vollständigkeit.'; // The description of the page for search engines
+const pageAuthor = 'Toby'; // Your name
 
 // DON'T EDIT BELOW THIS LINE! --------------------------------------------------------------------
 const getFilters = (entries) => {
